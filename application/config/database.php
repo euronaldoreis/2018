@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => 'mysql472.umbler.com',
+	'username' => 'liga_tarcio',
+	'password' => 'r0ck3tm4n',
 	'database' => 'liga_tarcio',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
