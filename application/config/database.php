@@ -79,7 +79,7 @@ $db['default'] = array(
 	'username' => 'liga_tarcio',
 	'password' => 'R0ck3tm4n',
 	'database' => 'liga_tarcio',
-	'dbdriver' => 'mysql',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
