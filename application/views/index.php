@@ -59,7 +59,7 @@
 			text-align: center;
 		}
 		nav .brand-logo {
-
+			width: 250px!important;
 		}
 	</style>
   <nav class="nav-extended teal darken-4">
