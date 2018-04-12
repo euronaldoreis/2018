@@ -59,7 +59,7 @@
 	</style>
   <nav class="nav-extended teal darken-4">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">Liga Tarcio</a>
+      <a href="#" class="brand-logo center"><img src="assets/img/favicon.png" style="width: 40px; margin-right: 10px;">Liga Tarcio</a>
     </div>
     <div class="nav-content center">
       <ul class="tabs tabs-transparent">
