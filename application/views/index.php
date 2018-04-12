@@ -55,7 +55,7 @@
 			text-align: center;
 		}
 	</style>
-  <nav class="nav-extended">
+  <nav class="nav-extended teal darken-4">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">Liga Tarcio</a>
     </div>
