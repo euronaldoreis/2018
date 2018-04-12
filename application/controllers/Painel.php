@@ -30,6 +30,36 @@ class Painel extends CI_Controller {
 		$this->load->view('painel/partidas', $dados);
 	}
 
+	public function cadastrar_partida(){
+		//verifica sessao do usuario
+		verifica_login();
+
+
+		$dados['times'] = $this->index_model->times();
+		$this->load->view('painel/cadastrar_partida', $dados);
+	}
+
+	public function editar_partida($id){
+		//verifica sessao do usuario
+		verifica_login();
+
+		$dados['partida'] = $this->index_model->editar_partida($id);
+
+		$this->load->view('painel/editar_partida', $dados);
+	}
+
+	public function salvar_partida(){
+		$dados_form = $this->input->post();
+
+		if (!isset($dados_form['idpartidas'])) {
+			$dados['partida'] = $this->index_model->salvar_partida($dados_form['time_um'], $dados_form['time_dois'], $dados_form['time_um_gols'], $dados_form['time_dois_gols']);
+		}
+
+		$dados['partida'] = $this->index_model->salvar_partida($dados_form['idpartidas'], $dados_form['time_um_gols'], $dados_form['time_dois_gols']);
+
+		redirect('painel/partidas');
+	}
+
 
 
 	// ***** TIMES ******* //

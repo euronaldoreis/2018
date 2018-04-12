@@ -1,100 +1,43 @@
-	      <div class="page-content">
-	      	<div class="container" style="margin-top: 30px;">
-			  	<table style="background-color: #fff;">
-			        <thead>
-			          <tr>
-			              <th>TIME</th>
-			              <th></th>
+	  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+	    <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+	    	<div class="mdl-card__supporting-text table">
+	    		<h4>Classificação</h4>
+	    		<table>
+	    			<thead>
+    				  <tr>
+    				  	  <th></th>
+	    				  <th></th>
 			              <th>PTS</th>
 			              <th>PJ</th>
 			              <th>VIT</th>
 			              <th>E</th>
 			              <th>DER</th>
 			              <th>SG</th>
-			          </tr>
-			        </thead>
+		              </tr>
+	    			</thead>
 
-			        <tbody>
-			          <tr>
-			            <td style="padding: 20px!important;">
-			            	<table class="jogo_name">
-			            		<tr>
-			            			<td class="escudo"> <img src="assets/escudos/river-nutella.png" style="width: 50px"></td>
-			            			<td>River Nutella</td>
-			            		</tr>
-			            	</table>
-			            </td>
-			            <td>
-			            </td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			          </tr>
-			        </tbody>
+	    			<tbody>
+	    				<?php foreach ($times as $row): ?>
+		    				<tr>
+		    					<td><img src="assets/escudos/<?php echo $row->escudo; ?>" width="40px;"></td>
+		    					<td><?php echo $row->nome; ?></td>
+		    					<td style="text-align: center;"><?php echo $row->pts; ?></td>
+		    					<td style="text-align: center;"><?php echo $row->pj; ?></td>
+		    					<td style="text-align: center;"><?php echo $row->vit; ?></td>
+		    					<td style="text-align: center;"><?php echo $row->e; ?></td>
+		    					<td style="text-align: center;"><?php echo $row->der; ?></td>
+		    					<td style="text-align: center;"><?php echo $row->sg; ?></td>
+		    				</tr>
+	    				<?php endforeach; ?>
+	    			</tbody>
+	    		</table>
+	    	</div>
 
-			        <tbody>
-			          <tr>
-			            <td style="padding: 20px!important;">
-			            	<table class="jogo_name">
-			            		<tr>
-			            			<td class="escudo"><img src="assets/escudos/meia-boca.png" style="width: 50px"></td>
-			            			<td>Meia Boca</td>
-			            		</tr>
-			            	</table>
-			            </td>
-			            <td>
-			            </td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			          </tr>
-			        </tbody>
+	    <div class="mdl-card__actions">
+	        <p>* PTS = Pontos, PJ = Partidas Jogadas, VIT = Vitórias, E = Empates, DER = Derrotas, SG = Saldo de Gol</p>
+	    </div>
 
-			        <tbody>
-			          <tr>
-			            <td style="padding: 20px!important;">
-			            	<table class="jogo_name">
-			            		<tr>
-			            			<td class="escudo"> <img src="assets/escudos/bayern-miguxos.png" style="width: 50px"></td>
-			            			<td>Bayern de Miguxos</td>
-			            		</tr>
-			            	</table>
-			            </td>
-			            <td>
-			            </td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			          </tr>
-			        </tbody>
+	    </div>
 
-			        <tbody>
-			          <tr>
-			            <td style="padding: 20px!important;">
-			            	<table class="jogo_name">
-			            			<td class="escudo" style="background-color: green;"></td>
-			            			<td>Ciallys FC</td>
-			            	</table>
-			            </td>
-			            <td>
-			            </td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			            <td>0</td>
-			          </tr>
-			        </tbody>
-			      </table>
-			  </div>
-	      </div>
+	  </section>

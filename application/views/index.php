@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="App da Liga Tarcio">
 	<title>Liga Tarcio</title>
 
 	<!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="icon" href="assets/img/favicon.png" />
 </head>
 
-<body>
+<body class="mdl-demo mdl-base">
 	<style type="text/css">
 
-		body {
-			background-color: #e9e9e9;
-		}
 		.jogo_name tr {
 			border-bottom: none;
 			padding-top: 20px;
@@ -45,24 +47,30 @@
 		.mdl-layout__container {
 			position: relative!important;
 		}
+
+		.mdl-grid.center-items {
+		  justify-content: center;
+		}
+		.center {
+			text-align: center;
+		}
 	</style>
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Liga Tarcio</a>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a class="active" href="#fixed-tab-1">Partidas</a></li>
+        <li class="tab"><a  href="#fixed-tab-2">Classificação</a></li>
+        <li class="tab"><a href="#fixed-tab-3">Artilharia</a></li>
+        <li class="tab"><a href="#fixed-tab-4">Times</a></li>
+      </ul>
+    </div>
+  </nav>
 
 	<!-- Simple header with fixed tabs. -->
-	<div class="mdl-layout mdl-js-layout mdl-layout--header mdl-layout--fixed-tabs">
-	  <header class="mdl-layout__header">
-	    <div class="mdl-layout__header-row">
-	      <!-- Title -->
-	      <span class="mdl-layout-title center"><h4>Liga Tárcio [PATROCINADOR] dos Campeões</h4></span>
-	    </div>
-	    <!-- Tabs -->
-	    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-	      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Partidas</a>
-	      <a href="#fixed-tab-2" class="mdl-layout__tab">Classificação</a>
-	      <a href="#fixed-tab-3" class="mdl-layout__tab">Artilharia</a>
-	      <a href="#fixed-tab-4" class="mdl-layout__tab">Times</a>
-	      <a href="#fixed-tab-5" class="mdl-layout__tab">Sobre</a>
-	    </div>
-	  </header>
+	<div class="mdl-layout mdl-js-layout mdl-layout--header">
 	  <main class="mdl-layout__content">
 	    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
 	    	<?php include('partidas.php'); ?>
@@ -87,6 +95,11 @@
 	</div>
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
 </body>
 </html>
