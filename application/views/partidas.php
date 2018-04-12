@@ -15,7 +15,7 @@
 			        	<h3><?php echo $row->time_um_gols .' x '. $row->time_dois_gols;?></h3>
 			        </div>
 			        <div class="mdl-cell mdl-cell--5-col mdl-cell--3-col-tablet mdl-cell--1-col-phone center">
-			        	<img src="assets/escudos/<?php echo $row->time_dois_escudo; ?>" style="width: 80px">
+			        	<img src="<?php echo base_url(); ?>assets/escudos/<?php echo $row->time_dois_escudo; ?>" style="width: 80px">
 			        	<p style="margin-top: 20px;"><?php echo $row->time_dois; ?></p>
 			        </div>
 			        <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone center">
