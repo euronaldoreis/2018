@@ -1,8 +1,3 @@
-
-<?php 
-var_dump($partidas);
-die(); ?>
-
 <!DOCTYPE html>
 <html>
 <head>

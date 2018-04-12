@@ -8,12 +8,12 @@
     				  <tr>
     				  	  <th></th>
 	    				  <th></th>
-			              <th>PTS</th>
-			              <th>PJ</th>
-			              <th>VIT</th>
-			              <th>E</th>
-			              <th>DER</th>
-			              <th>SG</th>
+			              <th style="text-align: center;">PTS</th>
+			              <th style="text-align: center;">PJ</th>
+			              <th style="text-align: center;">VIT</th>
+			              <th style="text-align: center;">E</th>
+			              <th style="text-align: center;">DER</th>
+			              <th style="text-align: center;">SG</th>
 		              </tr>
 	    			</thead>
 
