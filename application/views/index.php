@@ -59,7 +59,7 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">Liga Tarcio</a>
     </div>
-    <div class="nav-content">
+    <div class="nav-content center">
       <ul class="tabs tabs-transparent">
         <li class="tab"><a class="active" href="#fixed-tab-1">Partidas</a></li>
         <li class="tab"><a  href="#fixed-tab-2">Classificação</a></li>
