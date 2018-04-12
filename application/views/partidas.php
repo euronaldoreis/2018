@@ -1,3 +1,8 @@
+<?php 
+var_dump($partidas);
+die(); ?>
+
+
 <h4 class="center">Rodada 1</h4>
 	<?php foreach ($partidas as $row): ?>
 	  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
