@@ -25,6 +25,8 @@
 	<link rel="icon" href="assets/img/favicon.png" />
 
 	<meta name="theme-color" content="#004d40">
+
+	<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/9400c3e7c9b4805afe23b19922ef136f_1.js" async></script>
 </head>
 
 <body class="mdl-demo mdl-base">
