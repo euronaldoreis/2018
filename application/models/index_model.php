@@ -21,7 +21,7 @@ class Index_model extends CI_Model {
     }
 
     public function partidas() {
-        $this->db->select('partidas.idpartidas, a.nome as time_um, b.nome as time_dois, a.escudo as time_um_escudo, b.escudo as time_dois_escudo, time_casa_gols as time_um_gols, time_fora_gols as time_dois_gols, data');
+        $this->db->select('partidas.idpartidas, a.escudo as time_um_escudo, b.escudo as time_dois_escudo, time_casa_gols as time_um_gols, time_fora_gols as time_dois_gols, data');
         $this->db->from('partidas');
         $this->db->join('times a', 'a.idtimes = partidas.time_casa_id');
         $this->db->join('times b', 'b.idtimes = partidas.time_fora_id');
