@@ -23,6 +23,8 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="icon" href="assets/img/favicon.png" />
+
+	<meta name="theme-color" content="#004d40">
 </head>
 
 <body class="mdl-demo mdl-base">
