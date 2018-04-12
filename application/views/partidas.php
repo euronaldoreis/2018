@@ -8,7 +8,7 @@
 	        	<h5>Jogo <?php echo $row->idpartidas; ?></h5>
 			    <div class="mdl-grid center-items">
 			        <div class="mdl-cell mdl-cell--5-col mdl-cell--3-col-tablet mdl-cell--1-col-phone center">
-			        	<img src="assets/escudos/<?php echo $row->time_um_escudo; ?>" style="width: 80px">
+			        	<img src="<?php echo base_url(); ?>assets/escudos/<?php echo $row->time_um_escudo; ?>" style="width: 80px">
 			        	<p style="margin-top: 20px;"><?php echo $row->time_um; ?></p>
 			        </div>
 			        <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone center" style="margin-top: 10px;">
