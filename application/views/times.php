@@ -4,11 +4,11 @@
 
 	      <div class="mdl-card__supporting-text">
 			    <div class="mdl-grid">
-			        <div class="mdl-cell mdl-cell--5-col mdl-cell--3-col-tablet mdl-cell--1-col-phone center">
+			        <div class="mdl-cell mdl-cell--5-col mdl-cell--3-col-tablet mdl-cell--4-col-phone center">
 			        	<img src="assets/escudos/<?php echo $row->escudo; ?>" style="width: 100px;">
 			        	
 			        </div>
-			        <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet mdl-cell--1-col-phone center">
+			        <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet mdl-cell--4-col-phone center">
 			        	<h3 style="margin-top: 20px;"><?php echo $row->nome; ?></h3>
 			        </div>
 			    </div>
