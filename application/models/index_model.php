@@ -19,6 +19,33 @@ class Index_model extends CI_Model {
             return NULL;
         endif;
     }
+    
+    public function classificacao() {
+        $this->db->select('*');
+        $this->db->from('times');
+        $this->db->order_by("pts", "desc");
+        $this->db->order_by("vit", "desc");
+        $this->db->order_by("sg", "desc");
+        $query = $this->db->get();
+        if ($query->num_rows() > 0):
+            return $query->result();
+        else:
+            return NULL;
+        endif;
+    }
+
+    public function jogadores() {
+        $this->db->select('jogadores.nome as jogador, jogadores.gols, times.nome as time, times.escudo as escudo');
+        $this->db->join('times', 'times.idtimes = jogadores.time_id');
+        $this->db->from('jogadores');
+        $this->db->order_by("gols", "desc");
+        $query = $this->db->get();
+        if ($query->num_rows() > 0):
+            return $query->result();
+        else:
+            return NULL;
+        endif;
+    }
 
     public function partidas() {
         $this->db->select('partidas.idpartidas, a.nome as time_um, b.nome as time_dois, a.escudo as time_um_escudo, b.escudo as time_dois_escudo, time_casa_gols as time_um_gols, time_fora_gols as time_dois_gols, data');
@@ -35,53 +62,15 @@ class Index_model extends CI_Model {
         endif;
     }
 
-    public function editar_partida($id){
-        $this->db->select('partidas.idpartidas, a.nome as time_um, b.nome as time_dois, a.escudo as time_um_escudo, b.escudo as time_dois_escudo, time_casa_gols as time_um_gols, time_fora_gols as time_dois_gols, data');
-        $this->db->from('partidas');
-        $this->db->join('times a', 'a.idtimes = partidas.time_casa_id');
-        $this->db->join('times b', 'b.idtimes = partidas.time_fora_id');
-        $this->db->where('idpartidas', $id);
+    public function times() {
+        $this->db->select('*');
+        $this->db->from('times');
         $query = $this->db->get();
         if ($query->num_rows() > 0):
             return $query->result();
         else:
             return NULL;
         endif;
-    }
-
-    public function salvar_partida($id = null, $time_um, $time_dois, $time_um_gols, $time_dois_gols){
-
-        if ($id != null) {
-            $data = array (
-                'time_casa_gols' => $time_um_gols,
-                'time_fora_gols' => $time_dois_gols
-            );
-
-            $this->db->set($data);
-            $this->db->where('idpartidas', $id);
-            $this->db->update('partidas');
-        
-        } else {
-            $data = array (
-                'time_um' => $time_um,
-                'time_dois'=> $time_dois,
-                'time_casa_gols' => $time_um_gols,
-                'time_fora_gols' => $time_dois_gols
-            );
-
-            $this->db->insert('partidas', $data);
-        }
-    }
-
-    public function times() {
-    	$this->db->select('*');
-        $this->db->from('times');
-        $query = $this->db->get();
-    	if ($query->num_rows() > 0):
-    		return $query->result();
-    	else:
-    		return NULL;
-    	endif;
     }
 
     public function editar_time($id){

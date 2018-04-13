@@ -1,4 +1,4 @@
-	  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 
 	    <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
 	    	<div class="mdl-card__supporting-text table">
@@ -18,7 +18,7 @@
 	    			</thead>
 
 	    			<tbody>
-	    				<?php foreach ($times as $row): ?>
+	    				<?php foreach ($classificacao as $row): ?>
 		    				<tr>
 		    					<td><img src="assets/escudos/<?php echo $row->escudo; ?>" width="40px;"></td>
 		    					<td><?php echo $row->nome; ?></td>
