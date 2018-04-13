@@ -23,11 +23,6 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="icon" href="assets/img/favicon.png" />
-
-	<meta name="theme-color" content="#004d40">
-	
-	<script charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/9400c3e7c9b4805afe23b19922ef136f_1.js" async></script>
-
 </head>
 
 <body class="mdl-demo mdl-base">
@@ -59,15 +54,12 @@
 		.center {
 			text-align: center;
 		}
-		nav .brand-logo {
-			width: 250px!important;
-		}
 	</style>
-  <nav class="nav-extended teal darken-4">
+  <nav class="nav-extended">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center"><img src="assets/img/favicon_branco.png" style="width: 40px; margin-right: 10px;">Liga Tarcio</a>
+      <a href="#" class="brand-logo center"><img src="assets/img/favicon.png" style="width: 40px; margin-right: 10px;"> Liga Tarcio</a>
     </div>
-    <div class="nav-content center">
+    <div class="nav-content">
       <ul class="tabs tabs-transparent">
         <li class="tab"><a class="active" href="#fixed-tab-1">Partidas</a></li>
         <li class="tab"><a  href="#fixed-tab-2">Classificação</a></li>
@@ -89,7 +81,7 @@
 	    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
 	      <div class="page-content center">
 	      	<div class="container" style="margin-top: 30px;">
-	      		<p>Os dados estatísticos serão calculados no ínicio do campeonato.</p>
+	      		<?php include('artilharia.php'); ?>
 	      	</div>
 	      </div>
 	    </section>
