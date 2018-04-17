@@ -1,4 +1,10 @@
+<div class="center">
+		<img src="<?php echo base_url("assets/img/premio.png"); ?>" style="width: 280px; margin-bottom: 30px;">
+</div>
+
 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+
 
 	    <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
 	    	<div class="mdl-card__supporting-text table">

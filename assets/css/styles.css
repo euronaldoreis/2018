@@ -255,6 +255,9 @@ html, body {
 
 @media screen and (max-width:640px) {
   .mdl-grid img{
+    width: 80px!important;
+  }
+  .mdl-grid .img_artilharia img{
     width: 40px!important;
   }
 }

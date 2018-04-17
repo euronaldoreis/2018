@@ -1,12 +1,17 @@
+<div class="center">
+		<img src="<?php echo base_url("assets/img/trofeu.jpg"); ?>" style="width: 280px; margin-bottom: 30px;">
+</div>
+
 	 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 
-	    <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+	    <div class="img_artilharia mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
 	    	<div class="mdl-card__supporting-text table">
 	    		<h4>Artilharia</h4>
 	    		<table>
 	    			<thead>
     				  <tr>
     				  	  <th>Clas.</th>
+    				  	  <th></th>
 	    				  <th>Jogador</th>
 			              <th></th>
 			              <th></th>
@@ -21,12 +26,13 @@
 		    				<tr>
 		    					<td><?php echo $pos; ?></td>
 		    					<td>
+		    					    <?php if($row->capitao == 'S'):?> <img src="<?php echo base_url('assets/img/bracadeira.png'); ?>" alt="Braçadeira de Capitão" style="width: 24px!important;"><?php endif;?>
+		    					</td>
+		    					<td>
 		    						<div style="font-size: 16px;">
-		    							<?php echo $row->jogador; ?>
-		    						</div>
-		    						<div  style="padding-top: 6px; font-size: 12px;">
-		    							<span><img src="<?php echo base_url('assets/escudos/'); ?><?php echo $row->escudo; ?>" style="width: 24px; padding-right: 4px;"></span>
-		    							<span><?php echo $row->time; ?></span>
+		    							<img src="<?php echo base_url('assets/escudos/'); ?><?php echo $row->escudo; ?>" style="width: 36px; margin-right: -20px;">
+		    							<img src="<?php echo base_url('assets/img/user_2.jpg'); ?>" style="width: 36px; border-radius: 50%; border: 2px solid #fff;">
+		    							<?php echo $row->jogador.' - '.$row->camisa; ?>
 		    						</div>
 		    					</td>
 		    					<td></td>
