@@ -31,7 +31,7 @@
 		    					<td>
 		    						<div style="font-size: 16px;">
 		    							<img src="<?php echo base_url('assets/escudos/'); ?><?php echo $row->escudo; ?>" style="width: 36px; margin-right: -20px;">
-		    							<img src="<?php echo base_url('assets/img/'); ?><?php echo $row->foto; ?>" style="width: 36px; border-radius: 50%; border: 2px solid #fff;">
+		    							<img src="<?php echo base_url('assets/img/'); ?><?php echo $row->foto; ?>" style="width: 50px; height: 50px; border-radius: 50%; border: 2px solid #fff;">
 		    							<?php echo $row->jogador;?>
 		    						</div>
 		    					</td>
