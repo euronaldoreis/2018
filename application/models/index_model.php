@@ -87,7 +87,7 @@ class Index_model extends CI_Model {
     }
 
     public function jogadores() {
-        $this->db->select('jogadores.nome as jogador, jogadores.camisa as camisa, jogadores.capitao as capitao, jogadores.gols, times.nome as time, times.escudo as escudo');
+        $this->db->select('jogadores.nome as jogador, jogadores.camisa as camisa, jogadores.foto as foto, jogadores.capitao as capitao, jogadores.gols, times.nome as time, times.escudo as escudo');
         $this->db->join('times', 'times.idtimes = jogadores.time_id');
         $this->db->from('jogadores');
         $this->db->order_by("jogadores.nome", "asc");
