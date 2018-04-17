@@ -32,7 +32,7 @@
 		    						<div style="font-size: 16px;">
 		    							<img src="<?php echo base_url('assets/escudos/'); ?><?php echo $row->escudo; ?>" style="width: 36px; margin-right: -20px;">
 		    							<img src="<?php echo base_url('assets/img/user_2.jpg'); ?>" style="width: 36px; border-radius: 50%; border: 2px solid #fff;">
-		    							<?php echo $row->jogador.' - '.$row->camisa; ?>
+		    							<?php echo $row->jogador; ?>
 		    						</div>
 		    					</td>
 		    					<td></td>
