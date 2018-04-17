@@ -1,5 +1,5 @@
 <div class="center">
-		<img src="<?php echo base_url("assets/img/trofeu.jpg"); ?>" style="width: 280px; margin-bottom: 30px;">
+		<img src="<?php echo base_url("assets/img/trofeu.jpg"); ?>" style="width: 220px; margin-bottom: 30px;">
 </div>
 
 	 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
