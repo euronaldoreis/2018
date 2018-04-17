@@ -2,6 +2,9 @@
 		<img src="<?php echo base_url("assets/img/trofeu.jpg"); ?>" style="width: 220px; margin-bottom: 30px;">
 </div>
 
+<?php var_dump($jogadores);
+die(); ?>
+
 	 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 
 	    <div class="img_artilharia mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
