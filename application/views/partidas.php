@@ -10,6 +10,7 @@
 			        <div class="mdl-cell mdl-cell--5-col mdl-cell--3-col-tablet mdl-cell--2-col-phone center">
 			        	<img src="<?php echo base_url(); ?>assets/escudos/<?php echo $row->time_um_escudo; ?>" style="width: 80px">
 			        	<p style="margin-top: 20px;"><?php echo $row->time_um; ?></p>
+			        	<h3><?php echo $row->time_um_gols; ?></h3>
 			        	
 			        </div>
 			        <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone center" style="margin-top: 10px;">
@@ -18,6 +19,7 @@
 			        <div class="mdl-cell mdl-cell--5-col mdl-cell--3-col-tablet mdl-cell--2-col-phone center">
 			        	<img src="<?php echo base_url(); ?>assets/escudos/<?php echo $row->time_dois_escudo; ?>" style="width: 80px">
 			        	<p style="margin-top: 20px;"><?php echo $row->time_dois; ?></p>
+			        	<h3><?php echo $row->time_dois_gols; ?></h3>
 
 			        </div>
 			        <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone center">
