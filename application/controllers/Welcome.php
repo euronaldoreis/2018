@@ -16,7 +16,7 @@ class Welcome extends CI_Controller {
 		$dados['times'] = $this->index_model->times();
 		$dados['partidas'] = $this->index_model->partidas();
 		$dados['classificacao'] = $this->index_model->classificacao();
-		$dados['jogadores'] = $this->index_model->jogadores();
+		$dados['artilharia'] = $this->index_model->artilharia();
 
 		$this->load->view('index', $dados);
 	}

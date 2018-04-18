@@ -22,7 +22,7 @@
 	    			<tbody>
 	    				<?php
 	    				 $pos = 1;
-	    				 foreach ($jogadores as $row): ?>
+	    				 foreach ($artilharia as $row): ?>
 		    				<tr>
 		    					<td><?php echo $pos; ?></td>
 		    					<td>
